@@ -1,0 +1,76 @@
+.piece-zone{
+    border-radius: 5px;
+    display:grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows:repeat(5,100px) ;
+}
+
+.tail{
+ width:100px;
+ height: 100px;
+ display: grid;
+ place-content: center;
+ background-image:url("wood.png");
+ background-repeat: no-repeat;
+ background-size: 100px 100px;
+ padding: 0px;
+ position: relative; 
+}
+
+.red-piece{
+ cursor: grab;
+}
+
+.red-piece:active{
+ cursor:grabbing;
+}
+  
+.green-piece{
+ cursor:grab;
+}
+
+.green-piece:active{
+ cursor:grabbing;
+}
+
+.button-icon{
+ display:flex;
+ flex-direction: row;
+ height: 30px;
+ margin-top: 20px;
+}
+
+.rotate{
+ background-image:url("rotate-icon.png");
+ background-repeat: no-repeat;
+ background-size: 25px 25px ;
+ border: none;
+ border-radius: 50%;
+ width: 25px;
+ height: 25px;
+ cursor: pointer;
+ position: absolute;
+}
+
+.rotate:hover{
+    opacity: 0.8;
+    
+}
+
+.flip{
+    background-image:url("flip.icon.png");
+    background-repeat: no-repeat;
+    background-size: 25px 25px ;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-left: 30px;
+    position: absolute;
+    
+}
+
+.flip:hover{
+    opacity: 0.8;
+}
