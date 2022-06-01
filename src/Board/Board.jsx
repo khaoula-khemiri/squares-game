@@ -10,8 +10,7 @@ const Board = () => {
   let board= [];
  for(let i=0 ; i<=BOARD_SIZE-1;i++){
      for(let j = 0; j<=BOARD_SIZE -1; j++){
-        
-          board.push(<div key={`${i},${j}`} id={`${i},${j}`} className="cell" ></div>)}
+        board.push(<div key={`${i},${j}`} id={`${i},${j}`} className="cell" >{i},{j}</div>)}
  }
   return(
         <div className='board'>
@@ -22,5 +21,11 @@ const Board = () => {
   
 };
 export default Board;
+
+
+
+
+
+
 
 

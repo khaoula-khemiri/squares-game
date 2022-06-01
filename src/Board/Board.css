@@ -1,4 +1,5 @@
 .board {
+    margin: 0px;
     outline:0px solid rgb(2, 2, 2);
     display:grid;
     grid-template-columns: repeat(20,20px);
