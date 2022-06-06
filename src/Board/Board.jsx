@@ -1,24 +1,20 @@
-
-import React, {useEffect, useState} from 'react';
 import './Board.css';
 
 
-const BOARD_SIZE = 20;
-
+const BOARD_SIZE = 19;
 const Board = () => {
+ let board= [];
+ for(let i=0 ; i<=BOARD_SIZE;i++){
+    for(let j = 0; j<=BOARD_SIZE ; j++){
+     board.push(<div key={`${i},${j}`} id={`${i},${j}`} className="cell" ></div>)
+    }
+  }
 
-  let board= [];
- for(let i=0 ; i<=BOARD_SIZE-1;i++){
-     for(let j = 0; j<=BOARD_SIZE -1; j++){
-        board.push(<div key={`${i},${j}`} id={`${i},${j}`} className="cell" >{i},{j}</div>)}
- }
   return(
-        <div className='board'>
+    <div className='board'>
      {board}
-     </div>
-    )
-
-  
+    </div>
+  ) 
 };
 export default Board;
 

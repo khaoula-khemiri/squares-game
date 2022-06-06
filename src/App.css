@@ -13,7 +13,7 @@
 }
 
 .swal-button--confirm{
-  background-image: url("./image-background/piece-wood.png");
+  background-image: url("./Image-background/piece-wood.png");
   background-repeat: no-repeat;
   background-size:     cover;
   width: 130px;
@@ -48,7 +48,7 @@
 
 .button1 {
   margin-top: 20px;
-  background-image: url("./image-background/play.png");
+  background-image: url("./Image-background/play.png");
   background-repeat: no-repeat;
   background-size:100%;
   width: 60px;
@@ -65,7 +65,7 @@ opacity: 0.9;
 
 .button3 {
   margin-top: 20px;
-  background-image: url("./image-background/replay.png");
+  background-image: url("./Image-background/replay.png");
   background-repeat: no-repeat;
   background-size:100%;
   width: 65px;
@@ -79,7 +79,7 @@ opacity: 0.9;
   opacity: 0.9;
 }
 .player{
-  background-image: url("./image-background/piece-wood.png");
+  background-image: url("./Image-background/piece-wood.png");
   background-repeat: no-repeat;
   background-size:100%;
   font-size: 25px;

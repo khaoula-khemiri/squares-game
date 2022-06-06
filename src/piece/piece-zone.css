@@ -7,30 +7,66 @@
     display:grid;
     grid-template-columns: repeat(4,90px);
     grid-template-rows:repeat(4,90px) ;
-  }
+}
 
-  .tail{
-      width:90px;
-      height: 90px;
-      display: grid;
-      place-content: center;
-      background-image:url("./image-pieces/wood.png");
-      background-repeat: no-repeat;
-      background-size: 90px 90px;
-      
-      
-  }
-  .red-piece{
-      cursor: grab;
-  }
+.tail{
+ width:90px;
+ height: 90px;
+ display: grid;
+ place-content: center;
+ background-image:url("./image-pieces/wood.png");
+ background-repeat: no-repeat;
+ background-size: 90px 90px; 
+}
 
-  .red-piece:active{
-    cursor:grabbing;
+.image{
+ width: 90px;
+ height: 60px;
+ margin: 0px;
+ text-align: center;
+}
+
+
+.red-piece{
+ cursor: grab;
+ /*transition-duration: 3s;*/
+}
+
+.red-piece:active{
+ cursor:grabbing;
+ /*transition-duration:  0s;*/
 }
   
 .green-piece{
-    cursor:grab;
+ cursor:grab;
+ /*transition-duration:  3s;*/
 }
+
 .green-piece:active{
-    cursor:grabbing;
+ cursor:grabbing;
+ /*transition-duration:  0s;*/
+}
+
+.button-icon{
+ display: flex;
+ flex-direction: row;
+ padding: 0px;
+}
+
+.rotate{
+ width:20px;
+ height: 20px;
+ cursor: pointer;
+ background-image:url("./image-pieces/rotate-icon.png");
+ background-repeat: no-repeat;
+ background-size: 20px 20px;
+}
+
+.flip{
+ width:20px;
+ height: 20px;
+ cursor: pointer;
+ background-image:url("./image-pieces/flip.icon.png");
+ background-repeat: no-repeat;
+ background-size: 20px 20px; 
 }

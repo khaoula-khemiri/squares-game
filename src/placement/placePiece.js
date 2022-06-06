@@ -12,6 +12,7 @@ export function placePiece (id,player,array,board){
   console.log(piece);
   
 //top left corner board
+//verify if we can put green piece in the top corner  
 if(player === "green"){
   debutCloumn=0;
   finCloumn= piece.length -2;
@@ -21,9 +22,11 @@ if(player === "green"){
   yPiece=1;
   yes="yg";no="ng";p="g";np="r";
   if(piece[1][1]===p){placement=true}
+  console.log(" border right board");
  }
 
  // bottom right corner board
+ //verify if we can put red piece in the bottom corner 
  if(player === "red"){
   debutCloumn=21-piece.length;
   console.log(piece[piece.length-2][piece[0].length -2]);
@@ -35,9 +38,9 @@ if(player === "green"){
   yPiece=0;
   yes="yr";no="nr";p="r";np="g";
   if(piece[piece.length-2][piece[0].length -2] === p){placement=true}
+  console.log(" border bottom right corner board");
  }
 
- 
 
 //place piece
 console.log(placement);
