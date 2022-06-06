@@ -36,7 +36,7 @@ function rotate(id,type){
 // I'm working on this!!
 function flip(id,type){
  let element =document.getElementById(id);
- element.style.transform="rotateY(90deg)";
+ element.style.transform="rotateY(180deg)";
  flip90(id,type);// flip matrice ofv the piece 
 }
 
